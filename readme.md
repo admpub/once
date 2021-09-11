@@ -16,7 +16,7 @@ To get around this I wrote this package.
 
 ```
 import (
-    sync "github.com/m-murad/sync-once"
+    sync "github.com/admpub/once"
 )
 
 func main() {

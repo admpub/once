@@ -1,8 +1,9 @@
 package once_test
 
 import (
-	sync "github.com/m-murad/sync-once"
 	"testing"
+
+	sync "github.com/admpub/once"
 )
 
 type counter int
@@ -42,7 +43,7 @@ func TestOnce_Do(t *testing.T) {
 				}()
 			}
 			for i := 0; i < tc.calls; i++ {
-				<- ch
+				<-ch
 			}
 			res := c.Value()
 
